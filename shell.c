@@ -2,16 +2,16 @@
 
 
 int main(void){
-    char *buffer = NULL;
-    // ssize_t num_read;
-    size_t n = 0;
+	char *buffer = NULL;
+	// ssize_t num_read;
+	size_t n = 0;
 
-    printf("$ ");
+	printf("$ ");
 
 	getline(&buffer, &n, stdin);
 
-    printf(">>>>>> %s\n", buffer);
-    // printf("%ld \n",  num_read);
+	printf(">>>>>> %s\n", buffer);
+	// printf("%ld \n",  num_read);
 
-    
+	
 }
