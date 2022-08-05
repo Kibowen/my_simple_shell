@@ -13,7 +13,7 @@ int main(void){
     char **argv;
 
     printf("$ ");
-    num_read = getline(&buffer, &n, stdin);
+    num_read = *fgets(buffer, n, stdin);
     printf(">>>>>> %s\n", buffer);
     // printf("%ld \n",  num_read);
 

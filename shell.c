@@ -1,17 +1,11 @@
 #include <stdio.h>
+#include "shell.h"
 
 
-int main(void){
-	char *buffer = NULL;
-	// ssize_t num_read;
-	size_t n = 0;
+int main(void)
+{
 
-	printf("$ ");
+	print_prompt();
+	get_input();
 
-	getline(&buffer, &n, stdin);
-
-	printf(">>>>>> %s\n", buffer);
-	// printf("%ld \n",  num_read);
-
-	
 }
