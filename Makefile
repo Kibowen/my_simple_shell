@@ -1,6 +1,3 @@
-# target : dependecies
-#	actions
-
 cc=gcc
 Cflags=-Wall -Wextra -Werror -pedantic
 Cfiles=shell.c prompt.c read_input.c _getline.c
