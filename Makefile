@@ -9,7 +9,7 @@ shell.exe: $(Objs) shell.h
 	$(cc) $(Objs) -o shell.exe -l m
 
 %.o: %.c
-	$(cc) -c $(Cflags) $@ $^
+	$(cc) -c $(Cflags) $(Cfile) $@ $^
 
 run:
 	./shell.exe
