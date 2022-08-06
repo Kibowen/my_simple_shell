@@ -4,15 +4,13 @@ int get_input()
 {
 char *buffer = NULL, *copy_buffer = NULL;
     ssize_t num_read;
-    size_t n = 0;
+    size_t *n = 0;
     char *token;
     char *delim = " \n";
     int num_tokens = 0, i = 0;
     char **argv;
 
-    num_read = _getline(&buffer, &n, stdin);
-    printf(">>>>>> %s\n", buffer);
-    // printf("%ld \n",  num_read);
+    num_read = _getline(&buffer, n, stdin);
 
     /* to copy what the user typed, let's allocate enough space for it */
     copy_buffer = malloc(sizeof(char) * num_read);
