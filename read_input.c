@@ -7,7 +7,7 @@ int get_input()
 	
 	_getline(&buffer, n, stdin);
 
-	printf("this is what i printed %s", buffer);
+	printf("this is what i printed: %s", buffer);
 
 	return 0;
 }
