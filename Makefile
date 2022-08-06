@@ -6,7 +6,7 @@ Objs=shell.o prompt.o read_input.o _getline.o
 all:shell.exe
 
 shell.exe: $(Objs) shell.h
-	$(cc) $(Objs) -o shell.exe -l m
+	$(cc) $(Cflags) -o shell.exe $(Objs)
 
 %.o: %.c
 	$(cc) -c $(Cflags) $(Cfile) $@ $^
