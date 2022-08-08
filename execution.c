@@ -11,7 +11,7 @@ int execution(char **tokens)
 	commands(tokens);
 
 	/* check if command exist and generate the path for the command */
-	&command = _which(tokens[0]);
+	command = _which(tokens[0]);
 	if (command == NULL)
 	{
 		return (-1);
