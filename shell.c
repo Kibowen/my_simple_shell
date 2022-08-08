@@ -6,11 +6,12 @@ int main(void)
 	char *input, **token;
 	ssize_t num_read;
 	int return_code = 0;
+	
 	while(1)
 	{
 		print_prompt();
 
-		input = get_input(num_read);
+		input = get_input();
 
 		if(num_read == -1)
 		{
