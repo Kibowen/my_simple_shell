@@ -1,3 +1,6 @@
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -32,3 +35,5 @@ void hsh_exit(char **args);
 void hsh_cd(char **args);
 void hsh_help(char **args);
 void hsh_env(char **args);
+
+#endif
