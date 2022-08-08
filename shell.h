@@ -13,6 +13,7 @@ char *get_input(ssize_t *num_read);
 char** tokenize(char *line_read, ssize_t num_read);
 int execution(char **tokens);
 void commands(char **args);
+char * _which(char *command);
 
 // get line protype
 int _getline(char **lineptr, size_t *n, FILE *fp);
