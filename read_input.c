@@ -1,7 +1,8 @@
 #include "shell.h"
 
-char *get_input(ssize_t num_read)
+char *get_input()
 {
+	ssize_t num_read;
 	char *buffer = NULL;
 	size_t *n = 0;
 	
