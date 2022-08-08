@@ -1,7 +1,7 @@
 cc=gcc
 Cflags= -Wall -Wextra -Werror -pedantic
-Cfiles= shell.c prompt.c read_input.c _getline.c built_in.c execution.c parsing.c
-Objs= shell.o prompt.o read_input.o _getline.o built_in.o execution.o parsing.o 
+Cfiles= shell.c prompt.c read_input.c _getline.c built_in.c execution.c parsing.c _which.c
+Objs= shell.o prompt.o read_input.o _getline.o built_in.o execution.o parsing.o _which.o
 
 all:shell.exe
 

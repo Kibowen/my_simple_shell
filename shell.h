@@ -16,3 +16,18 @@ void commands(char **args);
 
 // get line protype
 int _getline(char **lineptr, size_t *n, FILE *fp);
+
+/* global environment variables */
+extern char **environ;
+
+/* struct for built-in commands */
+struct builtin {
+    char *name;
+    void (*func)(char **args);
+};
+
+/* prototype for functions relating to built-in commands */
+void hsh_exit(char **args);
+void hsh_cd(char **args);
+void hsh_help(char **args);
+void hsh_env(char **args);
