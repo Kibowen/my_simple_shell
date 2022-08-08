@@ -9,9 +9,9 @@
 #define GETLINE_MINSIZE 16
 
 int print_prompt(void);
-int get_input();
+char *get_input(ssize_t num_read);
 char** tokenize(char *line_read, ssize_t num_read);
-int excecution(char **tokens);
+int execution(char **tokens);
 void commands(char **args);
 
 // get line protype

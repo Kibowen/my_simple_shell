@@ -1,6 +1,6 @@
 #include "shell.h"
 
-int excecution(char **tokens)
+int execution(char **tokens)
 {
     pid_t child_pid;
     char *command, **envp;
