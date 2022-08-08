@@ -4,7 +4,7 @@
 int main(void)
 {
 	char *input, **token;
-	ssize_t num_read;
+	ssize_t *num_read;
 	int return_code = 0;
 
 	while(1)
